@@ -6,10 +6,14 @@ package team5427.frc.robot;
 
 import static edu.wpi.first.units.Units.Hertz;
 
+import java.util.Optional;
+
 import com.ctre.phoenix6.CANBus;
 import com.pathplanner.lib.config.RobotConfig;
 import edu.wpi.first.math.util.Units;
 import edu.wpi.first.units.measure.Frequency;
+import edu.wpi.first.wpilibj.DriverStation;
+import edu.wpi.first.wpilibj.DriverStation.Alliance;
 import edu.wpi.first.wpilibj2.command.button.Trigger;
 
 /**
@@ -20,6 +24,8 @@ import edu.wpi.first.wpilibj2.command.button.Trigger;
  * <p>It is advised to statically import this class (or one of its inner classes) wherever the
  * constants are needed, to reduce verbosity.
  */
+
+
 public final class Constants {
   public static final String kCanivoreBusName = "canivore_bus_name";
   public static final double kOdometryFrequency =
@@ -72,4 +78,15 @@ public final class Constants {
     public static final double kDriverControllerJoystickDeadzone = 0.0;
     public static final double kDriverControllerRotationalControlJoystickDeadzone = 0.05;
   }
+
+  public static Optional<Alliance> kAlliance;
+
+  static {
+  }
+
+
+  static {
+    kAlliance = DriverStation.getAlliance();
+  }
 }
+

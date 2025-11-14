@@ -243,7 +243,7 @@ public class MagicSteelTalonFX implements IMotorController {
   }
 
   @Override
-  public void setSetpoint(Distance distance) {
+  public void setSetpoint(boolean distance) {
     this.setpoint = distance.in(Meter);
     switch (configuration.mode) {
       case kLinear:
@@ -266,7 +266,7 @@ public class MagicSteelTalonFX implements IMotorController {
   }
 
   @Override
-  public void setSetpoint(LinearVelocity velocity) {
+  public void setSetpoint(boolean velocity) {
     this.setpoint = velocity.in(MetersPerSecond);
     switch (configuration.mode) {
       case kFlywheel:
