@@ -78,6 +78,7 @@ public final class Constants {
     public static final double kDriverControllerJoystickDeadzone = 0.0;
     public static final double kDriverControllerRotationalControlJoystickDeadzone = 0.05;
   }
+<<<<<<< HEAD
 
   public static Optional<Alliance> kAlliance;
 
@@ -85,6 +86,16 @@ public final class Constants {
   }
 
 
+=======
+  // public static final double kOdometryFrequency = 100; // hz - so every 10 ms
+
+  public static Optional<Alliance> kAlliance;
+
+
+  static {
+  }
+
+>>>>>>> 6d83ad46936f182255bcda14755f4daae85f50d3
   static {
     kAlliance = DriverStation.getAlliance();
   }

@@ -21,9 +21,12 @@ import team5427.lib.motors.MotorConfiguration.MotorMode;
 import team5427.lib.motors.MotorUtil;
 
 public class CascadeConstants {
+<<<<<<< HEAD
     
     
 
+=======
+>>>>>>> 6d83ad46936f182255bcda14755f4daae85f50d3
     public static final CANDeviceId kCascadeMasterId = new CANDeviceId(20);
     public static final CANDeviceId kCascadeSlaveId = new CANDeviceId(21);
 
@@ -98,12 +101,21 @@ public class CascadeConstants {
     }
 
     public static final CANDeviceId kPivotCANcoderId = new CANDeviceId(18, "*");
+<<<<<<< HEAD
     public static final CANcoderConfiguration pivotEncoderConfig = new CANcoderConfiguration();
     static{
     pivotEncoderConfig.MagnetSensor.SensorDirection = SensorDirectionValue.Clockwise_Positive;
     pivotEncoderConfig.MagnetSensor.MagnetOffset = CascadeConstants.kPivotCancoderOffset;
     pivotEncoderConfig.MagnetSensor.AbsoluteSensorDiscontinuityPoint = 0.5;
 
+=======
+
+    public static final CANcoderConfiguration pivotEncoderConfig = new CANcoderConfiguration();
+    static {
+        pivotEncoderConfig.MagnetSensor.SensorDirection = SensorDirectionValue.Clockwise_Positive;
+        pivotEncoderConfig.MagnetSensor.MagnetOffset = CascadeConstants.kPivotCancoderOffset;
+        pivotEncoderConfig.MagnetSensor.AbsoluteSensorDiscontinuityPoint = 0.5;
+>>>>>>> 6d83ad46936f182255bcda14755f4daae85f50d3
     }
 
     public static final Distance kCascadeTolerance = Centimeters.of(1.5);
@@ -153,5 +165,8 @@ public class CascadeConstants {
 
     public static final Rotation2d kLowReefAlgaeRotation = Rotation2d.fromDegrees(25.0);
     public static final Rotation2d kHighReefAlgaeRotation = Rotation2d.fromDegrees(20.0);
+<<<<<<< HEAD
     
+=======
+>>>>>>> 6d83ad46936f182255bcda14755f4daae85f50d3
 }

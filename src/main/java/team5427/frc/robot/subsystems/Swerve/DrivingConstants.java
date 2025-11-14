@@ -88,6 +88,7 @@ public final class DrivingConstants {
         kTranslationalPositionTolerance.get(), kTranslationalVelocityTolerance.get());
 
   }
+<<<<<<< HEAD
 
   public static final double kWheelDiameterMeters = Units.inchesToMeters(2.195 * 2.0);
     public static final double kTrackWidth = Units.inchesToMeters(22.75);
@@ -290,3 +291,6 @@ public final class DrivingConstants {
 }
 
 
+=======
+}
+>>>>>>> 6d83ad46936f182255bcda14755f4daae85f50d3
